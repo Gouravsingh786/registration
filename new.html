@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Add.css">
+</head>
+<body>
+    <div class="parent">>
+    <div class="firstchild"><h1>Speech to text</h1></div>
+    <textarea name="new" placeholder="Your voice is here..." id="Speechtotext" cols="50" rows="5"></textarea>
+    <div class="secondchild"><button onclick="voice()">Click to speak</button></div>
+    </div>
+
+    <script>
+        function voice(){
+            var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = "hi-IN";
+            recognition.onresult = function(event){
+                console.log(event);
+                document.getElementById("Speechtotext").value = event.results[0][0].transcript;
+            }
+            recognition.start();
+        }
+    </script>
+</body>
+</html>

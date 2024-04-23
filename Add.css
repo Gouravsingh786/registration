@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: cornflowerblue;
+}
+
+.parent {
+    text-align: center;
+}
+
+.firstchild {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.secondchild {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+textarea {
+    font-family: sans-serif;
+    padding: 15px 20px;
+    text-align: justify;
+    border: 0;
+    outline: none;
+    color: red;
+    box-shadow: 2px 3px 5px grey;
+    border-radius: 8px;
+    display: block;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(138, 118, 4);
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: sans-serif;
+    background: rgb(239, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
